@@ -6,4 +6,3 @@ st.write("Funcionou?")
 st.write("Sim, funcionou!!")
 st.write("mais uma vez")
 st.write("testando pelo PC")
-SD
