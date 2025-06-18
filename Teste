@@ -1,0 +1,16 @@
+import random as rdm
+
+def criar_senha():
+    tamanho=int(input('Tamanho da senha:'))
+    senha=''
+    for i in range(tamanho):
+        opcoes=[1,2]
+        escolha=rdm.choice(opcoes)
+        if escolha==1:
+            caractere=rdm.choice("abcdefghijklmnopqrstuwxyz")
+            senha+=str(caractere)
+        elif escolha==2:
+            caractere=rdm.randint(0,9)
+            senha+=str(caractere)
+    return senha
+print(criar_senha())
