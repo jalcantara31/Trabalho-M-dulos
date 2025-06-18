@@ -12,3 +12,4 @@ for i in range(tamanho):
         caractere=rdm.choice("abcdefghijklmnopq")
 st.button("Criar Senha")
 st.code(senha_gerada)
+#teste
