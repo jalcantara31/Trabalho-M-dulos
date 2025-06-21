@@ -9,7 +9,7 @@ tamanho=st.slider("Tamanho da senha",8,32,12)
 def criar_senha(tamanho):
     senha=''
     for i in range(tamanho):
-        opcoes=[1,2,3]
+        opcoes=[1,2,3,4]
         escolha=rdm.choice(opcoes)
         if escolha==1:
             caractere=rdm.choice("abcdefghijklmnopqrstuwxyz")
@@ -17,6 +17,8 @@ def criar_senha(tamanho):
             caractere=rdm.randint(0,9)
         elif escolha==3:
             caractere=rdm.choice("ABCDEFGHIJKLMNOPQRSTUWXYZ")
+        elif escolha==4:
+            caractere=rdm.choice(",.;#$%&*!@/")
         senha+=str(caractere)
     return senha
 
